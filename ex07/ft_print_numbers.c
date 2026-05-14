@@ -6,13 +6,13 @@
 /*   By: aschulz- <aschulz-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/12 17:47:47 by aschulz-          #+#    #+#             */
-/*   Updated: 2026/05/14 13:51:59 by aschulz-         ###   ########.fr       */
+/*   Updated: 2026/05/14 18:36:23 by aschulz-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(void);
+void	ft_putchar(char c);
 
-int	ft_print_numbers(void)
+void	ft_print_numbers(void)
 {
 	char	c;
 
