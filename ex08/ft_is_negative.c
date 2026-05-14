@@ -6,13 +6,13 @@
 /*   By: aschulz- <aschulz-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/12 18:18:05 by aschulz-          #+#    #+#             */
-/*   Updated: 2026/05/13 09:48:16 by aschulz-         ###   ########.fr       */
+/*   Updated: 2026/05/13 14:42:03 by aschulz-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_putchar(char c);
 
-void	ft_is_negatice(int n)
+void	ft_is_negative(int n)
 {
 	if (n < 0)
 	{
