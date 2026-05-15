@@ -1,31 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aschulz- <aschulz-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/13 16:06:00 by aschulz-          #+#    #+#             */
-/*   Updated: 2026/05/15 09:53:55 by aschulz-         ###   ########.fr       */
+/*   Created: 2026/05/15 13:32:39 by aschulz-          #+#    #+#             */
+/*   Updated: 2026/05/15 13:50:13 by aschulz-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_swap(int *a, int *b)
-{
-	int	c;
-
-	c = *a;
-	*a = *b;
-	*b = c;
-}
+#include <unistd.h>
 #include <stdio.h>
+
+void ft_putchar(char c)
+{
+	write (1, &c, 1);
+}
+
+void ft_putstr(char *str)
+{
+	int i;
+	 
+	i = 0;
+	while (str[i] != '\0')
+	{
+		ft_putchar(str[i]);
+		i++;
+	}
+}
 
 int main(void)
 {
-	int a = 2;
-	int b = 1;
-	printf("antes: a = %d, b = %d\n", a, b);
-	ft_swap(&a, &b);
-	printf("depois: a = %d, b = %d", a, b);
+	char *str = "teste";
+	ft_putstr(str);
 	return (0);
 }
