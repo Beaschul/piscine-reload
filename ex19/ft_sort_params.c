@@ -6,7 +6,7 @@
 /*   By: aschulz- <aschulz-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/15 15:51:40 by aschulz-          #+#    #+#             */
-/*   Updated: 2026/05/18 10:06:11 by aschulz-         ###   ########.fr       */
+/*   Updated: 2026/05/18 10:36:12 by aschulz-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,10 +54,8 @@ void ft_swapa(char **s1, char **s2)
 int main (int argc, char **argv)
 {
 	int i;
-	int j;
 
 	i = 1;
-	j = 1;
 	while (i < argc - 1)
 	{
 		if (ft_strcpm(argv[i], argv[i+1]) > 0)
@@ -68,11 +66,13 @@ int main (int argc, char **argv)
 		else
 			i++;
 	}
-	while (j < argc)
+	i = 1;
+	while (i < argc)
 	{
-		ft_putstr(argv[j]);
+		ft_putstr(argv[i]);
 		ft_putchar('\n');
-		j++;
+		i++;
 	}
 	return (0);
 }
+
